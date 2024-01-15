@@ -1,0 +1,89 @@
+:root{
+    --sizeL: 16px;
+    --sizeM: 14px;
+    --sizeS: 12px;
+    --size: var(var(--sizeL));
+    --font: "Times New Roman", sans-serif;
+    font-size: var(--size);
+    font-family: var(--font);
+    background-color: black;
+    color: white;
+}
+
+@media screen and(max-height: 800px){
+    .main_page_div{
+        margin-top: 30em;
+        text-align: center;
+    }
+}
+
+@media screen and(max-height: 900px){
+    .main_page_div{
+        margin-top: 50em;
+        text-align: center;
+    }
+}
+
+@media screen and(max-height: 1000px){
+    .main_page_div{
+        margin-top: 60em;
+        text-align: center;
+    }
+}
+
+.main_page_div{
+    margin-top: 15em ;
+    text-align: center;
+}
+
+.main_page_header{
+    color: white;
+    font-family: 'stencil', var(--font);
+}
+
+.main_input_password{
+    background-color: black;
+    border-color: white ;
+    border-radius: 0.6em;
+    color: white;
+}
+
+.enter_button{
+    background-color: black;
+    border-left-color: white;
+    border-right-color:white ;
+    border-top-color: black;
+    border-bottom: black;
+    color: white;
+    border-radius: 0.6em;
+    border-left: solid;
+    border-right:solid;
+    padding-left:  5em;
+    padding-right: 5em;
+    margin-top: 3em;
+}
+
+.enter_button:hover{
+    background-color: grey;
+    border-left-color: white;
+    border-right-color:white ;
+    border-top-color: white;
+    border-bottom: white;
+    color: white;
+    border-radius: 0.6em;
+    border-left: solid;
+    border-right: solid;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 3em;
+}
+
+.enter_button_div{
+    margin-top: 4em;
+}
+
+.footer{
+    text-align: right;
+    color: white;
+    margin-top: 20em;
+}
