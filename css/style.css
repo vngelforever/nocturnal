@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900');
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    background-color: black;
+}
+
+body,
+input,textarea,
+button{
+    font-family: 'Engravers MT', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+@keyframes ani01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+    padding: 0 15px;
+}
+
+.section-title h1{
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+
+.section-title h1:before{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 80px;
+    height: 3px;
+    background-color: #ff9800;
+
+}
+
+.btn-01{
+    background-color: #ff9800;
+    color: white;
+    border: 2px solid transparent ;
+    padding: 10px 35px ;
+    border-radius: 30px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.btn-01:hover{
+    background-color: transparent;
+    border-color: #ff9800;
+    color: #ff9800;
+}
+
+.btn-01:focus{
+    outline: none;
+}
+
+/* --------------------------------PRELOADER--------------------------- */
+/* .preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 1099;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+}
+
+.preloader.loaded{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -99;
+}
+.preloader .loader{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ff9800;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    animation: ani01 2s linear infinite;
+
+} */
+
+/* ---------------------------------Header----------------------- */
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5 ease;
+    background-color: black;
+}
+
+.header .fixed{
+    background-color: white;
+    position: fixed;
+}
+
+.header .brand-name{
+    padding: 0 15px;
+
+}
+
+.header .brand-name a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+    font-family: 'Chiller';
+}
+
+.header .fixed .brand-name a{
+    color: black;
+}
+
+.header .nav-toggle{
+    width: 40px;
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    display: none;
+
+}
+
+.header .fixed .nav-toggle{
+    border-color: black;
+}
+
+.header .nav-toggle span{
+    height: 1px;
+    display: block;
+    width: 16px;
+    background-color: white;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.header .nav-toggle span::before,
+.header .nav-toggle span::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.header .fixed .nav-toggle span,
+.header .fixed .nav-toggle:before,
+.header .fixed .nav-toggle:after{
+    background-color: black;
+}
+
+.header .nav-toggle span:before{
+    transform: translate(-6px);
+}
+
+.header .nav-toggle span:after{
+    transform: translate(-6px);
+}
+
+.header .nav{
+    padding: 0 15px;
+}
+
+.header .nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header .nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 25px 0;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.header .fixed .nav ul li a{
+    color: black;
+}
+
+.header .fixed .nav ul li a:hover,
+.header .nav ul li a:hover{
+    color: crimson;
+}
+
+/* -------------------------------------Home section------------------------- */
+
+.home-section{
+    min-height: 100vh;
+    background-image: url('../Images/noc\ web\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding:0 15px;
+    margin-left: 10em ;
+    margin-right: 10em;
+    margin-top: 5em;
+    border-radius: 100em;
+    border-style: solid;
+    border-color: black;
+}
+
+.home-section .home-container{
+    background-color: transparent;
+    border-radius: 100em;
+    border: 2px solid transparent;
+}
+.home-section:before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1 ;
+}
+
+.home-section .shape-01{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border: 2px solid crimson;
+    right: 5%;
+    top: 20%;
+    animation: ani01 5s linear infinite;
+}
+
+.home-section .row{
+    min-height:100vh,
+}
+
+.home-section .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 16em;
+}
+
+.home-section .home-content h4{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+
+}
+
+.home-section .home-content h5{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: 'Engravers MT', 'Times New Roman', sans-serif;
+}
+
+.home-section .scroll-down{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: -15px;
+    animation: scrollDown 2s ease infinite;
+
+}
+
+@keyframes scrollDown{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+.home-section .scroll-down img{
+    width: 25px;
+    display: block;
+    margin: 2px auto;
+
+}
+
+/* ---------------------------------------------About Section------------------------------------------- */
+
+.about-section{
+    margin-top: 2em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding:0;
+    /* min-height: 100vh; */
+    margin-bottom: 0;
+}
+
+.about-section .container{
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    border: 2px solid black;
+    border-radius: 2em;
+    /* background-color: white; */
+    color: white;
+    font-family: 'Engravers MT','Times New Roman', sans-serif;
+    text-align: center;
+
+    /* display: flex; */
+}
+
+.about-section .container .about-content .section-title h1{
+    font-family: 'Engravers MT','Times New Roman', sans-serif ;
+    color: white;
+    font-size: large;
+}
+
+.about-section .container .about-content p{
+    text-align: center;
+    align-content: center;
+    font-weight: lighter;
+}
+
+.button-main-field{
+    margin-top: 2em;
+}
+
+.button-main{
+    /* border: 2px solid crimson; */
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 0 transparent;
+    border-top: 0 transparent;
+    background-color: transparent;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 2em;
+    border-radius: 4em;
+    border-style: solid;
+
+}
+
+.button-main:hover{
+    background-color: black;
+    animation-delay: 0.5s;
+    color: crimson;
+}
+
+/* -------------------------------------------------Password input------------------------------------------------------------------- */
+
+.password-input-section{
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 15em;
+}
+
+.password-input-div h5{
+    margin-bottom: 1em;
+}
+
+.password-input{
+    background-color: black;
+    border-color: gray;
+    color: white;
+    border-radius: 6em;
+}
+
+.password-input-section .password-input-div .button-main-field .button-main{
+    font-family: 'Times New Roman', sans-serif;
+    text-decoration: none;
+    color: purple;
+}
+
+.password-input-section .password-input-div .button-main-field .button-main:hover{
+    color: crimson;
+    border: 2px solid white;
+}
+
+/* -----------------------------------------------------INFO HTML--------------------------------------------------- */
+
+.value-section 
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-container{
+    /* margin-left: 10em;
+    margin-right: 10em; */
+    /* border: 2px solid white; */
+    /* background-color: white; */
+    padding: 9em;
+    display: inline-block;
+    background-image: url('../Images/MvO2n8Gbrj-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.location-text{
+    font-family: monospace;
+    color: white;
+    font-weight: lighter;
+    text-transform: lowercase;
+    /* border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+    animation-delay: 2s; */
+}
+
+/* Cursor blinking */
+@keyframes cursor{
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* typing effect */
+@keyframes typing{
+    from{ width: 0}
+}
+
+.button-div{
+    margin-top: 8em;
+    margin-bottom: 2em;
+    padding-left: 30em;
+    padding-right: 30em;
+}
+
+.button{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 6em;
+    margin-top: 10em;
+    /* margin-left: 30em;
+    margin-right: 30em; */
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.shop-button{
+    border: 2px groove white;
+    background-color: white;
+    color: black;
+    padding: 0.2em;
+    margin-top: 2em;
+    border-radius: 6em;
+}
+
+.value-section .value-container label{
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+.shop-button:hover{
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5 ease;
+    border-color: red;
+}
+
+.socials-block{
+    display: inline-block;
+    text-align: center;
+}
+
+/* ---------------------------------------------------Footer--------------------------------------------------- */
+
+.footer_block{
+    padding: 2em;
+    background-color: black;
+}
+
+.footer-businesses-block{
+    border-top: 2px groove gray ;
+
+}
+
+.footer-businesses{
+    display: inline-block;
+    list-style: square;
+    color: gray;
+    
+}
+
+/* ----------------------------------------------------SHOP------------------------------------------------------- */
+
+.shop-div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+    margin: 20em 0;
+}
