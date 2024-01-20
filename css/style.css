@@ -427,7 +427,14 @@ button{
     align-items: center;
     align-items: center;
     text-align: center;
-    padding: 15em;
+    /* padding: 15em; */
+    margin-top: 15em;
+    margin-bottom: 10em;
+}
+
+.password-input-div{
+    display: block;
+    justify-content: center;
 }
 
 .password-input-div h5{
@@ -473,6 +480,10 @@ button{
     background-position: center;
 }
 
+/* .value-section .value-container .values{
+    display: flex;
+} */
+
 .location-text{
     font-family: monospace;
     color: white;
@@ -511,7 +522,7 @@ button{
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-radius: 6em;
-    margin-top: 10em;
+    /* margin-top: 10em; */
     /* margin-left: 30em;
     margin-right: 30em; */
 
@@ -520,13 +531,21 @@ button{
     text-align: center;
 
     color: white;
-    /* text-align: center; */
     cursor: pointer;
 }
 
 .button:hover{
     background-color: white;
     color: black;
+}
+
+.show-me-button-div{
+    margin-top: 10em;
+    /* padding-left: 30em;
+    padding-right: 30em; */
+    align-content: center;
+    justify-content: center;
+
 }
 
 .shop-button{
@@ -538,7 +557,7 @@ button{
     border-radius: 6em;
 }
 
-.value-section .value-container label{
+.value-section .value-container p{
     font-family: sans-serif;
     text-transform: lowercase;
 }
@@ -589,10 +608,48 @@ button{
     margin: 20em 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .home-section{
         margin-left: 4em;
         margin-right: 4em;
         
     }
+
+    .password-input-section{
+        margin-top: 7em;
+        /* margin-bottom: 20em; */
+    }
+
+    .button-div{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    .value-section .value-container{
+        font-size: 12px;
+        padding-top: 20em;
+    }
+
+    #show-me-button{
+        margin-top: 10em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    /* .home-section{
+        margin-left: 4em;
+        margin-right: 4em;
+        
+    } */
+
+    .password-input-section{
+        margin-top: 20em;
+        margin-bottom: 30em;
+     }  
+
+     .button-div{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
 }
