@@ -266,6 +266,7 @@ button{
     border-radius: 100em;
     border-style: solid;
     border-color: black;
+
 }
 
 .home-section .home-container{
@@ -574,6 +575,10 @@ button{
     
 }
 
+.footer{
+    color: gray;
+}
+
 /* ----------------------------------------------------SHOP------------------------------------------------------- */
 
 .shop-div{
@@ -582,4 +587,12 @@ button{
     text-align: center;
     font-family: 'Times New Roman', sans-serif;
     margin: 20em 0;
+}
+
+@media screen and (max-width: 600px) {
+    .home-section{
+        margin-left: 4em;
+        margin-right: 4em;
+        
+    }
 }
