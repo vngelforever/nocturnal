@@ -1,54 +1,3 @@
-var unlock_location_input = document.getElementById("unlock_location_input");
-
-$('document').ready(function(){
-
-    // $('#button_event').click(function(){
-    //     $('#nocturnal_description').toggle(3000);
-    // })
-
-    $('#find_out_more_button').click(function(){
-        $('#event_description').show(2000);  
-        $('#find_out_more_button').hide(1500);
-        $('.find_out_more_heading').hide(1500)
-    })
-
-    $('#find_out_more_button_2').click(function(){
-        $('#event_description_2').show(2000);  
-        $('#find_out_more_button_2').hide(1500);
-        $('.find_out_more_heading_2').hide(1500)
-    })
-
-
-    //location drop down
-    $('#show-me-button').on("click",function(){
-        $('#location-text').toggle(2000)
-    })
-
-    //Next for us drop down
-    $('#next-for-us-button').on("click",function(){
-        $('#next-for-us-text').toggle(2000);
-    })
-
-    //Shop drop down
-    $('#shop-button').on("click",function(){
-        $('#shop-info-label').toggle(2000);
-        $('#shop-info-button').fadeToggle(2000);
-    })
-
-    //Social media drop down
-    $('#socials-button').on("click",function(){
-        $('.socials-icons').toggle(2000);
-    })
-
-
-//Snake game
-
-    $('shape-01').on("click",function(){
-        $('#game').show();
-    })
-
-})
-
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
@@ -171,8 +120,9 @@ document.addEventListener('keydown', function(e) {
     snake.dx = -grid;
     snake.dy = 0;
   }
+
   // up arrow key
-  else if (e.which === 38 && snake.dy === 0) {
+   if (e.which === 38 && snake.dy === 0) {
     snake.dy = -grid;
     snake.dx = 0;
   }
@@ -186,8 +136,44 @@ document.addEventListener('keydown', function(e) {
     snake.dy = grid;
     snake.dx = 0;
   }
+
+
 });
+
+//buttons
+  //left
+  $('#left').click(function(){
+    if (snake.dx === 0) {
+        snake.dx = -grid;
+        snake.dy = 0;
+      }
+  })
+
+  //up
+  $('#up').click(function(){
+  if ( snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+})
+
+    //right
+    $('#right').click(function(){
+        if (snake.dx === 0) {
+        snake.dx = grid;
+        snake.dy = 0;
+        }
+    })
+
+    //down
+    $('#down').click(function(){
+        if (snake.dy === 0) {
+            snake.dy = grid;
+            snake.dx = 0;
+          }
+    })
+
+
 
 // start the game
 requestAnimationFrame(loop);
-

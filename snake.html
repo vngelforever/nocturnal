@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Game For You</title>
+  <link rel='stylesheet' href="jQuery-ui/jquery-ui.css">
+    <link rel='stylesheet' href="jQuery-ui/jquery-ui.structure.css">
+    <link rel='stylesheet' href="jQuery-ui/jquery-ui.theme.css">
+    <link rel='stylesheet' href="css/style.css">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: black;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 1px solid white;
+  }
+  </style>
+</head>
+<body>
+    <!-- HEAD SECTION STARTS -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="brand-name">
+                    <a href="index.html"><img src="icons/Noc-icon.png" width="55px" height="55px"></a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="login.html">2024</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEAD SECTION ENDS -->
+
+    <!-- GAME SECTION STARTS -->
+    <div class="game-display-div">
+        <canvas width="400" height="400" id="game"></canvas>
+    </div>
+<div class="game-buttons">
+    <button id="left" class="game-keys"><img src="game buttons/left-removebg-preview.png" width="100px" height="100px"></button>
+    <button id="up" class="game-keys"><img src="game buttons/up-removebg-preview.png" width="100px" height="100px"></button>
+    <button id="down" class="game-keys"><img src="game buttons/down-removebg-preview.png" width="100px" height="100px"></button>
+    <button id="right" class="game-keys"><img src="game buttons/right-removebg-preview.png" width="100px" height="100px"></button>
+</div>
+
+   <!-- Footer -->
+   <div class="footer_block">
+    <div class="footer-businesses-block">
+        <div class="footer-icons">
+            <img src="Images/VNGEL-removebg.png" width="100px" height="100px">
+            <img src="icons/9Lives_Overlay-removebg-preview.png" width="100px" height="100px" style="opacity:0.7;">
+        </div>
+    </div>
+</div>
+<footer class="footer">Copyright property of Nocturnal @2024</footer>
+
+</body>
+<script src="jQuery/jquery-3.7.1.js" type="text/javascript"></script>
+<script src="JQ.js" type="text/javascript"></script>
+<script src='snake.js'></script>
+</html>

@@ -355,6 +355,22 @@ button{
 
 }
 
+/* --------------------------------------------- Snake Game---------------------------------------------*/
+.game-display-div{
+    margin-top: 10em;
+    text-align: center;
+    display: block;
+    align-content: center;
+    justify-content: center;
+}
+
+.game-buttons{
+    text-align: center;
+}
+
+.game-keys{
+    background-color: transparent;
+}
 /* ---------------------------------------------About Section------------------------------------------- */
 
 .about-section{
@@ -654,6 +670,14 @@ button{
     #show-me-button-div{
         margin-top: 20em;
     }
+
+    .value-text{
+        display: flex;
+    }
+
+    .game-display-div{
+        margin-top: 7em;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -662,6 +686,10 @@ button{
         margin-right: 4em;
         
     } */
+
+    .home-section .container .home-content img{
+        margin: 0em;
+    }
 
     .password-input-section{
         margin-top: 20em;
