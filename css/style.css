@@ -308,12 +308,6 @@ button{
     padding-top: 16em;
 }
 
-.home-section .home-content h4{
-    font-size: 20px;
-    color: white;
-    margin: 0;
-
-}
 
 .home-section .home-content h5{
     font-size: 20px;
@@ -323,6 +317,11 @@ button{
     font-weight: 900;
     letter-spacing: 10px;
     font-family: 'Engravers MT', 'Times New Roman', sans-serif;
+}
+
+.home-section .container .home-content img{
+    margin-left: 21em;
+    margin-top: -3em;
 }
 
 .home-section .scroll-down{
@@ -335,6 +334,7 @@ button{
     animation: scrollDown 2s ease infinite;
 
 }
+
 
 @keyframes scrollDown{
     0%, 20%, 50%, 80%, 100%{
@@ -392,6 +392,10 @@ button{
     text-align: center;
     align-content: center;
     font-weight: lighter;
+}
+
+.about-us-desc{
+    font-family: 'Times New Roman', Arial, sans-serif;
 }
 
 .button-main-field{
@@ -598,6 +602,10 @@ button{
     color: gray;
 }
 
+.footer-icons{
+    display: flex;
+}
+
 /* ----------------------------------------------------SHOP------------------------------------------------------- */
 
 .shop-div{
@@ -608,11 +616,22 @@ button{
     margin: 20em 0;
 }
 
+@media screen and (width < 376px) {
+    .home-section .container .home-content img{
+        margin: 0em;
+        margin-left: -2em;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .home-section{
         margin-left: 4em;
         margin-right: 4em;
         
+    }
+
+    .home-section .container .home-content img{
+        margin: 0em;
     }
 
     .password-input-section{
@@ -627,11 +646,13 @@ button{
 
     .value-section .value-container{
         font-size: 12px;
-        padding-top: 20em;
+        padding-left: 15em;
+        padding-right: 15em;
+        padding-top: 5em;
     }
 
-    #show-me-button{
-        margin-top: 10em;
+    #show-me-button-div{
+        margin-top: 20em;
     }
 }
 
