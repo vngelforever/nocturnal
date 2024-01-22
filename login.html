@@ -16,25 +16,44 @@
 </head>
 <body>
     <section class="password-input-section">
+        <form onchange="isPasswordEqual">
         <div>
             <div class="password-input-div">
                 <h5>Enter Password</h5>
                 <input type="password" class="password-input" id="password">
-                <div class="button-main-field"><a href="info.html" class="button-main" id="show-me-button-a">Show Me</a></div>
+                <div class="button-main-field"><a href="info.html" class="button-main" id="show-me-button-a" hidden>Show Me</a></div>
             </div>
         </div>
+        </form>
     </section>
     
     <!-- Footer -->
     <div class="footer_block">
         <div class="footer-businesses-block">
             <div class="footer-icons">
-                <img src="Images/VNGEL-removebg.png" width="100px" height="100px">
-                <img src="icons/9Lives_Overlay-removebg-preview.png" width="100px" height="100px" style="opacity:0.7;">
+                <a href="https://www.instagram.com/vngelforever/" target="_blank">
+                    <img src="Images/VNGEL-removebg.png" width="100px" height="100px">
+                </a>
+                <a href="https://www.instagram.com/8plus1life/" target="_blank">
+                    <img src="icons/9Lives_Overlay-removebg-preview.png" width="100px" height="100px" style="opacity:0.7;">
+                </a>
             </div>
         </div>
 </div>
 <footer class="footer">Copyright property of Nocturnal @2024</footer>
 
 </body>
+<script src="jQuery/jquery-3.7.1.js" type="text/javascript"></script>
+<script>
+     function isPasswordEqual(){
+      var password = document.getElementById("password").value;
+    
+      if(password == 'GOOD'){
+          $('#show-me-button-a').show();;
+      }
+      else{
+          alert("Password don't match!");
+      }
+    }
+</script>
 </html>

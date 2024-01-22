@@ -662,21 +662,29 @@ button{
 
     .value-section .value-container{
         font-size: 12px;
-        padding-left: 15em;
-        padding-right: 15em;
+        /* padding-left: 15em;
+        padding-right: 15em; */
         padding-top: 5em;
+        
     }
 
     #show-me-button-div{
         margin-top: 20em;
     }
 
-    .value-text{
+    /* .value-text{
         display: flex;
-    }
+    } */
 
     .game-display-div{
         margin-top: 7em;
+    }
+
+    .button{
+        border: 2px solid grey;
+    }
+    .button:hover{
+        border: 2px solid white;
     }
 }
 
@@ -699,6 +707,13 @@ button{
      .button-div{
         padding-left: 0em;
         padding-right: 0em;
+    }
+
+    .button{
+        border: 2px solid grey;
+    }
+    .button:hover{
+        border: 2px solid white;
     }
 
 }
