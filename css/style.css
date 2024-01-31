@@ -3,7 +3,6 @@
 body{
     margin: 0;
     line-height: 1.5;
-    background-color: black;
 }
 
 body,
@@ -69,12 +68,12 @@ button{
     bottom: -5px;
     width: 80px;
     height: 3px;
-    background-color: #ff9800;
+    background-color: crimson;
 
 }
 
 .btn-01{
-    background-color: #ff9800;
+    /* background-color: #ff9800; */
     color: white;
     border: 2px solid transparent ;
     padding: 10px 35px ;
@@ -130,7 +129,7 @@ button{
 
 /* ---------------------------------Header----------------------- */
 .header{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -252,9 +251,14 @@ button{
 
 /* -------------------------------------Home section------------------------- */
 
+.index-page{
+    background-image: url('../Images/lightning-background.jpg');
+    background-size: cover;
+}
+
 .home-section{
     min-height: 100vh;
-    background-image: url('../Images/noc\ web\ background.jpg');
+    background-image: url('../Images/noc_web_background-removebg-preview.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -264,8 +268,7 @@ button{
     margin-right: 10em;
     margin-top: 5em;
     border-radius: 100em;
-    border-style: solid;
-    border-color: black;
+    border-color: transparent;
 
 }
 
@@ -285,9 +288,10 @@ button{
     background-color: black;
     opacity: 0.7;
     z-index: -1 ;
+    border-radius: 100em;
 }
 
-.home-section .shape-01{
+.shape-01{
     position: absolute;
     height:30px;
     width: 30px;
@@ -295,7 +299,16 @@ button{
     right: 5%;
     top: 20%;
     animation: ani01 5s linear infinite;
+    /* background-color: crimson; */
+    text-align: center;
+    font-size: larger;
+    color: hotpink;
+    font-family: 'Engravers MT',
+        'Times New Roman',
+        'Arial',
+        sans-serif;
 }
+
 
 .home-section .row{
     min-height:100vh,
@@ -382,26 +395,39 @@ button{
     padding:0;
     /* min-height: 100vh; */
     margin-bottom: 0;
+    /* background-color: #faf9f6; */
+    border-radius: 6em;
 }
 
 .about-section .container{
     margin-top: 2em;
     margin-left: 4em;
     margin-right: 4em;
-    border: 2px solid black;
-    border-radius: 2em;
+    border-radius: 90em;
     /* background-color: white; */
-    color: white;
+    background-image: url('../Images/Y2K\ img.jpg');
+    background-position: center;
+    background-size: 105%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* color: white; */
     font-family: 'Engravers MT','Times New Roman', sans-serif;
     text-align: center;
 
     /* display: flex; */
 }
 
+.about-section .container .about-content{
+    /* background-color: #020002; */
+    border-radius: 80em;
+    color: white;
+    font-weight: bold;
+}
+
 .about-section .container .about-content .section-title h1{
     font-family: 'Engravers MT','Times New Roman', sans-serif ;
-    color: white;
     font-size: large;
+    color: white;
 }
 
 .about-section .container .about-content p{
@@ -420,36 +446,39 @@ button{
 
 .button-main{
     /* border: 2px solid crimson; */
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 0 transparent;
-    border-top: 0 transparent;
-    background-color: transparent;
+    border: 2px solid white;
+    background-color: white;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     padding-left: 5em;
     padding-right: 5em;
     margin-top: 2em;
     border-radius: 4em;
-    border-style: solid;
-
+    text-decoration: none;  
+    color: black;  
 }
 
 .button-main:hover{
-    background-color: black;
+    background-color: darkgray;
     animation-delay: 0.5s;
-    color: crimson;
+    transition: all 0.5s ease;
 }
 
 /* -------------------------------------------------Password input------------------------------------------------------------------- */
+
+/* .password_input_top{
+    padding-bottom: 15em;
+} */
 
 .password-input-section{
     align-items: center;
     align-items: center;
     text-align: center;
-    /* padding: 15em; */
+    /* padding-top: 15em; */
     margin-top: 15em;
     margin-bottom: 10em;
+    /* background-image: url('/Images/STAR-SKY-BACKGROUND.png'); */
+    background-color: #020002;
 }
 
 .password-input-div{
@@ -479,7 +508,69 @@ button{
     border: 2px solid white;
 }
 
+.password-button-main{
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 6em;
+    color: white;
+}
+
+.password-button-main:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
 /* -----------------------------------------------------INFO HTML--------------------------------------------------- */
+
+.shape-02 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    /* border: 2px solid crimson; */
+     right: 7%;
+    /* top: 100%; */
+    animation: ani01 10s linear infinite;
+    /* background-color: crimson; */
+    text-align: center;
+    color: black;
+    font-family: 'Engravers MT',
+        'Times New Roman',
+        'Arial',
+        sans-serif;
+}
+
+.about-article{
+    text-align: center;
+    margin-top: 8em;
+    background-color: #020002;
+}
+
+.about-article .about-article-div{
+    margin-top: 0.5em;
+    background-image: url('../Images/Y2K_img-removebg-preview.png');
+    background-position: center;
+    /* border-radius: 90em; */
+    /* opacity: 80%; */
+    padding: 0.5em;
+    background-position:center;
+    background-size: cover;
+}
+
+.about-article .about-article-div .about-article-text{
+    font-family: 'Engravers MT', 'Times New Roman' , 'Arial', sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 5em;
+    margin: 3em;
+    border-radius: 90em;
+    background-color: black;
+    opacity: 60%;
+}
+
+.about-article .about-article-div .about-article-text .about-article-text-underline{
+    border: 2px solid black;
+}
 
 .value-section 
 {
@@ -498,14 +589,16 @@ button{
     background-image: url('../Images/MvO2n8Gbrj-removebg-preview.png');
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
+
 
 /* .value-section .value-container .values{
     display: flex;
 } */
 
 .location-text{
-    font-family: monospace;
+    font-family: 'Engravers MT', 'Times New Roman', sans-serif, monospace;
     color: white;
     font-weight: lighter;
     text-transform: lowercase;
@@ -534,13 +627,14 @@ button{
 .button-div{
     margin-top: 8em;
     margin-bottom: 2em;
-    padding-left: 30em;
-    padding-right: 30em;
+    /* padding-left: 30em;
+    padding-right: 30em; */
 }
 
 .button{
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    /* border-left: 2px solid white;
+    border-right: 2px solid white; */
+    border: 2px groove grey;
     border-radius: 6em;
     /* margin-top: 10em; */
     /* margin-left: 30em;
@@ -575,6 +669,7 @@ button{
     padding: 0.2em;
     margin-top: 2em;
     border-radius: 6em;
+    text-decoration: none;
 }
 
 .value-section .value-container p{
@@ -593,6 +688,25 @@ button{
 .socials-block{
     display: inline-block;
     text-align: center;
+}
+
+.info_button{
+    background-color: white;
+    border-radius: 6em;
+    padding: 0.5em;
+    border: 2px groove white;
+    color: black;
+    text-decoration: none;
+}
+
+.info_button:hover{
+    background-color: lightgray;
+    transition: all 0.5s ease;
+}
+
+.audio-scream{
+    background-color: transparent;
+    width: 100px;
 }
 
 /* ---------------------------------------------------Footer--------------------------------------------------- */
@@ -650,6 +764,17 @@ button{
         margin: 0em;
     }
 
+    .home-section .container .row .home-content h5{
+        font-size: 14px;
+    }
+
+    .about-section .container{
+        border-radius: 10em;
+        margin-left: 0em;
+        margin-right: 0em;
+        border: 2px groove gray;
+    }
+
     .password-input-section{
         margin-top: 7em;
         /* margin-bottom: 20em; */
@@ -683,9 +808,15 @@ button{
     .button{
         border: 2px solid grey;
     }
+
     .button:hover{
         border: 2px solid white;
     }
+
+        .about-article .about-article-div {
+            background-size: 40em;
+            border-radius: 20em;
+        }
 }
 
 @media screen and (max-width:1024px) {
