@@ -757,7 +757,8 @@ button{
     .home-section{
         margin-left: 4em;
         margin-right: 4em;
-        
+        background-image: url('../Images/noc_web_background-MOBILE.png');
+        padding-bottom: 5em;
     }
 
     .home-section .container .home-content img{
