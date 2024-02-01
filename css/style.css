@@ -807,10 +807,9 @@ button{
     }
 
     .index-page {
-        background-image: url('../Images/lightning-background-mobile.png');
+        background-image: url('../Images/dark_purple_clouds_with_dark_purple_stars_by_xrebelyellx_dgbddij-fullview.jpg');
         background-size: cover;
-        background-position: center
-        ;
+        /* background-position: center; */
     }
 
     .password-input-section{
